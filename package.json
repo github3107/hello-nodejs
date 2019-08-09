@@ -4,13 +4,17 @@
   "description": "demo",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js"
+    "test": "IP=0.0.0.0 PORT=3030 mocha --timeout 5000 "
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/github3107/hello-nodejs.git"
   },
-  "author": "rameshpendem",
+  "keywords": [
+    "demo"
+  ],
+  "author": "rpendem",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/github3107/hello-nodejs/issues"
