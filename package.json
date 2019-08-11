@@ -20,6 +20,8 @@
     "mongodb": "^2.1.16",
     "morgan": "^1.7.0",
     "object-assign": "4.1.0",
+    "os":0.1.1,
+    "dns":0.2.2
   },
   "keywords": [
     "demo"
