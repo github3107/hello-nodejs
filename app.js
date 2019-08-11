@@ -3,6 +3,10 @@ var port = process.env.PORT || process.env.OPENSHIFT_NODEJS_PORT || 8080,
     mongoURL = process.env.OPENSHIFT_MONGODB_DB_URL || process.env.MONGO_URL,
     mongoURLLabel = "";
 
+require('dns').lookup(require('os').hostname(), function (err, add, fam) {
+  ip=add;
+})
+
 var express = require('express');
 var app = express();
 app.get('/', function (req, res) {
